@@ -1,4 +1,4 @@
-package com.lucas.employeemanager.resource;
+package com.lucas.employeemanager.controller;
 
 import com.lucas.employeemanager.model.Employee;
 import com.lucas.employeemanager.service.EmployeeService;
@@ -6,16 +6,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Deque;
-import java.util.LinkedList;
 import java.util.List;
 
 @RestController
 @RequestMapping("/employee")
-public class EmployeeResource {
+public class EmployeeController {
+
     private final EmployeeService employeeService;
-    Deque test = new LinkedList();
-    public EmployeeResource(EmployeeService employeeService) {
+
+    public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
