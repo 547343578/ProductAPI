@@ -14,7 +14,15 @@ Además, es necesario crear una base de dato llamado "productmanagement" para ar
 de dato llamado "productmanagement_test", que es para ejecutar los tests.
 
 
-Una vez arrancado la aplicacion, puede hacer operaciones de CRUD mediante POSTMAN (por ejemplo). Para añadir o renovar un producto,
+Los mapping para esta aplicación son:
+getAllProducts() -> http://localhost:8080/product/all
+getProductById() -> http://localhost:8080/product/find/{id}
+addProduct() -> http://localhost:8080/product/add
+updateProduct() -> http://localhost:8080/product/update
+deleteProduct() -> http://localhost:8080/product/delete/{id}
+
+
+Una vez arrancado la aplicación, puede hacer pruebas de CRUD mediante POSTMAN (por ejemplo). Para añadir o renovar un producto,
 es necesario que le pase datos en formato JSON, por ejemplo:
 {
      "name":"banana",
